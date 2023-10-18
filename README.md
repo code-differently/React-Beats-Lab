@@ -1,71 +1,102 @@
-# Getting Started with Create React App
+Welcome to your very own music studio. In this lab, we'll dance to the beats of code and melodies of React components, focusing on artists like Rod Wave, Brent, Drake, and SZA. But remember, this is your studio, so feel free to remix with your favorite tunes!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+### **🌌 Set Up Your Studio**
 
-In the project directory, you can run:
+1. Fire up your terminal or command prompt.
+2. Navigate to your `dev` folder.
+3. Initiate a new React project named `react-beats-lab`.
+4. Enter your project's directory: `cd react-beats-lab`.
+5. Create a `components` folder within the `src` directory to house your sound components.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### **Exercises**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+**1. 📜 My Favorite Tracks**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Objective: Display a list of your favorite tracks.
 
-### `npm run build`
+Tasks:
+- Inside `components`, create `Playlist.js`.
+- List out a few tracks by Rod Wave, Brent, Drake, and SZA.
+- Use `.map()` to showcase each track in a list format.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Hint:** Don't forget to assign a unique `key` prop for each item when you map.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**End Result:** A list displaying something like:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+- Rod Wave: Street Runner
+- Brent: Dead Man Walking
+- Drake: Laugh Now Cry Later
+- SZA: Good Days
+```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**2. 🔔 Song Request Bell**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Objective: Implement a feature to request a song.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Tasks:
+- Craft `SongRequestBell.js`.
+- When the button is clicked, display an alert indicating a song request.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Hint:** Use the `onClick` event handler.
 
-## Learn More
+**End Result:** A button labeled "Request a Song" which, when clicked, shows an alert saying "Song request received!"
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**3. 🎧 Headphone Sessions**
 
-### Code Splitting
+Objective: Keep track of how many times a song has been played.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Tasks:
+- Design `TrackPlays.js`.
+- Create a button representing a track. Each click should increase the play count.
 
-### Analyzing the Bundle Size
+**Hint:** You'll need to utilize the `useState` hook.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**End Result:** A button saying "Play Rod Wave: Tombstone". Each press updates the button to: "Played X times!"
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Challenge
+🎵 Genre Jukebox
 
-### Deployment
+**Objective:** A jukebox that reveals top artists from different genres at the press of a button.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Tasks:**
 
-### `npm run build` fails to minify
+1. Craft `GenreJukebox.js` within the `components` folder.
+2. Design five buttons corresponding to these genres: Rap, R&B, Pop, Country, and Afrobeats.
+3. When a button is pressed, it should unveil a top artist from that genre.
+   
+**Hint:** Use React's state to dynamically display the artist based on the button clicked.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# React-Beats-Lab
+**End Result:** When the "Rap" button is pressed, it might reveal "Kendrick Lamar". When the "R&B" button is pressed, it could show "Usher". Pressing "Pop" might display "Ariana Grande", and "Country" will bring up "Luke Bryan". And when the "Afrobeats" button is clicked, it will reveal "Tems".
+
+---
+
+
+## Challenge
+📻 Artist Radio Selector
+
+**Objective:** Create a feature allowing users to select their favorite artist-based radio station and tune in.
+
+**Tasks:**
+
+1. Draft a component named `RadioSelector.js` inside the `components` folder.
+2. Inside `RadioSelector`, display radio button options for artists: Rod Wave, Brent, Drake, and SZA.
+3. Add a "Tune In" button beneath the radio options.
+4. When the "Tune In" button is clicked, it should display the selected artist's radio station.
+
+**Hint:** Familiarize yourself with how radio buttons work in HTML to capture the user's selection.
+
+**End Result:** Users can choose from a set of radio buttons, each representing an artist. After selecting an artist like "Drake" and pressing the "Tune In" button, a message should display saying "Now playing: Drake Radio".
